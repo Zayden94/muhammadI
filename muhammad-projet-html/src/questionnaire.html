@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/question.css">
+    <title>Questionnaire Interactif</title>
+    <script src="/src/js/main.js" defer></script>
+    <!-- Lien vers le fichier JS -->
+    <style>
+        .question {
+            display: none;
+            /* Masquer toutes les questions par défaut */
+        }
+
+        .active {
+            display: block;
+            /* Afficher la question active */
+        }
+
+        .hidden {
+            display: none;
+            /* Masquer les résultats par défaut */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Questionnaire sur Mercedes-Benz</h1>
+        <form id="questionnaire">
+            <div class="question active" id="question1">
+                <p>1. Quel est le modèle le plus vendu de Mercedes-Benz ?</p>
+                <label><input type="radio" name="q1" value="S-Class"> S-Class</label><br>
+                <label><input type="radio" name="q1" value="C-Class"> C-Class</label><br>
+                <label><input type="radio" name="q1" value="E-Class"> E-Class</label><br>
+                <label><input type="radio" name="q1" value="G-Class"> G-Class</label><br>
+                <button type="button" onclick="nextQuestion(1)">Suivant</button>
+                <button type="button" onclick="fillAnswers()">Remplir toutes les réponses</button>
+            </div>
+
+            <div class="question" id="question2">
+                <p>2. Quel moteur est souvent associé à la performance AMG ?</p>
+                <label><input type="radio" name="q2" value="AMG GT"> AMG GT</label><br>
+                <label><input type="radio" name="q2" value="V6"> V6</label><br>
+                <label><input type="radio" name="q2" value="V12"> V12</label><br>
+                <label><input type="radio" name="q2" value="Diesel"> Diesel</label><br>
+                <button type="button" onclick="nextQuestion(2)">Suivant</button>
+            </div>
+
+            <div class="question" id="question3">
+                <p>3. Quel est le nom du système de sécurité actif de Mercedes ?</p>
+                <label><input type="radio" name="q3" value="G-Class"> G-Class</label><br>
+                <label><input type="radio" name="q3" value="Distronic"> Distronic</label><br>
+                <label><input type="radio" name="q3" value="Active Brake Assist"> Active Brake Assist</label><br>
+                <label><input type="radio" name="q3" value="ABS"> ABS</label><br>
+                <button type="button" onclick="nextQuestion(3)">Suivant</button>
+            </div>
+
+            <div class="question" id="question4">
+                <p>4. Quelle est la marque de luxe de Mercedes-Benz ?</p>
+                <label><input type="radio" name="q4" value="EQS"> EQS</label><br>
+                <label><input type="radio" name="q4" value="BMW"> BMW</label><br>
+                <label><input type="radio" name="q4" value="Audi"> Audi</label><br>
+                <label><input type="radio" name="q4" value="Maybach"> Maybach</label><br>
+                <button type="button" onclick="nextQuestion(4)">Suivant</button>
+            </div>
+
+            <div class="question" id="question5">
+                <p>5. Quel modèle est connu sous le nom de "CLA" ?</p>
+                <label><input type="radio" name="q5" value="CLA"> CLA</label><br>
+                <label><input type="radio" name="q5" value="GLA"> GLA</label><br>
+                <label><input type="radio" name="q5" value="GLE"> GLE</label><br>
+                <label><input type="radio" name="q5" value="GLC"> GLC</label><br>
+                <button type="submit">Soumettre</button>
+            </div>
+        </form>
+
+        <div id="resultat" class="hidden"></div>
+        <!-- Zone pour afficher les résultats -->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/output.css">
+    <title>Mercedes-Benz - Top 5</title>
+</head>
+
+<body>
+    <div>
+        <div>
+            <a href="https://www.mercedes-benz.fr/?srsltid=AfmBOopjOu7SG_RyU4i-VJjt4I1NVTV1jxUPEdD02vj0btp7IyShE_sj"></a>
+            <a class="btn btn-ghost text-xl">MERCEDES-BENZ</a>
+        </div>
+        <div>
+            <ul class="menu menu-horizontal px-1">
+                <li>
+                    <details>
+                        <summary>Contact</summary>
+                        <div>
+                            <form id="questionnaire" class="space-y-6 mt-6">
+
+                                <!-- Question 1 -->
+                                <div>
+                                    <p class="font-semibold">1. Quel est le modèle le plus luxueux ?</p>
+                                    <div class="flex flex-col space-y-2 mt-2">
+                                        <label><input type="radio" name="q1" value="S-Class" class="radio" /> S-Class</label>
+                                        <label><input type="radio" name="q1" value="CLA" class="radio" /> CLA</label>
+                                        <label><input type="radio" name="q1" value="G-Class" class="radio" /> G-Class</label>
+                                    </div>
+                                </div>
+
+                                <!-- Question 2 -->
+                                <div>
+                                    <p class="font-semibold">2. Quel modèle est un coupé sportif ?</p>
+                                    <div class="flex flex-col space-y-2 mt-2">
+                                        <label><input type="radio" name="q2" value="AMG GT" class="radio" /> AMG GT</label>
+                                        <label><input type="radio" name="q2" value="E-Class" class="radio" /> E-Class</label>
+                                        <label><input type="radio" name="q2" value="G-Class" class="radio" /> G-Class</label>
+                                    </div>
+                                </div>
+
+                                <!-- Question 3 -->
+                                <div>
+                                    <p class="font-semibold">3. Quel modèle est le plus adapté au tout-terrain ?</p>
+                                    <div class="flex flex-col space-y-2 mt-2">
+                                        <label><input type="radio" name="q3" value="G-Class" class="radio" /> G-Class</label>
+                                        <label><input type="radio" name="q3" value="CLA" class="radio" /> CLA</label>
+                                        <label><input type="radio" name="q3" value="S-Class" class="radio" /> S-Class</label>
+                                    </div>
+                                </div>
+
+                                <!-- Question 4 -->
+                                <div>
+                                    <p class="font-semibold">4. Lequel de ces modèles est électrique ?</p>
+                                    <div class="flex flex-col space-y-2 mt-2">
+                                        <label><input type="radio" name="q4" value="EQS" class="radio" /> EQS</label>
+                                        <label><input type="radio" name="q4" value="G-Class" class="radio" /> G-Class</label>
+                                        <label><input type="radio" name="q4" value="CLA" class="radio" /> CLA</label>
+                                    </div>
+                                </div>
+
+                                <!-- Question 5 -->
+                                <div>
+                                    <p class="font-semibold">5. Quel est le plus économique ?</p>
+                                    <div class="flex flex-col space-y-2 mt-2">
+                                        <label><input type="radio" name="q5" value="CLA" class="radio" /> CLA</label>
+                                        <label><input type="radio" name="q5" value="S-Class" class="radio" /> S-Class</label>
+                                        <label><input type="radio" name="q5" value="G-Class" class="radio" /> G-Class</label>
+                                    </div>
+                                </div>
+
+                                <!-- Soumission -->
+                                <button type="submit" class="btn btn-primary mt-6">Valider mes réponses</button>
+                            </form>
+
+                            <!-- Résultat -->
+                            <div id="resultat" class="mt-8 text-center font-bold hidden"></div>
+
+                            <details>
+                                <summary>Lien</summary>
+                                <ul>
+                                    <li><a href="">Calculatrice</a></li>
+                                </ul>
+                            </details>
+                </li>
+            </ul>
+            </div>
+        </div>
+
+        <div>
+            <h2>Bienvenue sur mon site</h2>
+            <p>
+                Je vais vous présenter une sélection équilibrée des meilleures voitures Mercedes-Benz, des modèles les plus luxueux aux plus accessibles.
+            </p>
+        </div>
+        <section>
+            <article>
+                <h3>1. Mercedes-Benz S-Class</h3>
+                <div class="carousel w-full">
+                    <div id="slide1" class="carousel-item relative w-full">
+                        <img src="/image/mercedes class s/mercedes--classe-s-berline--2024- devant.jpg" class="w-full" />
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide4" class="btn btn-circle">❮</a>
+                            <a href="#slide2" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide2" class="carousel-item relative w-full">
+                        <img src="/image/mercedes class s/mercedes--classe-s-berline--2024-devant2.jpg" class="w-full" />
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide1" class="btn btn-circle">❮</a>
+                            <a href="#slide3" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide3" class="carousel-item relative w-full">
+                        <img src="/image/mercedes class s/mercedes--classe-s-berline--2024-interieur.jpg" class="w-full" />
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide2" class="btn btn-circle">❮</a>
+                            <a href="#slide4" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide4" class="carousel-item relative w-full">
+                        <img src="/image/mercedes class s/mercedes class E-derriere.jpg" class="w-full" />
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide3" class="btn btn-circle">❮</a>
+                            <a href="#slide1" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                </div>
+                <p>Le summum du luxe et du confort, avec les dernières innovations technologiques.</p>
+                <div tabindex="0" class="collapse collapse-arrow bg-base-100 border-base-300 border">
+                    <div class="collapse-title font-semibold">Caracteristiques</div>
+                    <div class="collapse-content text-sm">
+                        <div class="stats stats-vertical shadow">
+                            <div class="stat">
+                                <div class="stat-title">Type de Carrosserie</div>
+                                <div class="stat-value">Berline</div>
+                                <div class="stat-desc">Une berline de luxe avec un design élégant.</div>
+                            </div>
+
+                            <div class="stat">
+                                <div class="stat-title">Utilisation</div>
+                                <div class="stat-value">Luxe, Familiale</div>
+                                <div class="stat-desc">Idéale pour le confort et le prestige.</div>
+                            </div>
+
+                            <div class="stat">
+                                <div class="stat-title">Motorisation</div>
+                                <div class="stat-value">Essence, Hybride</div>
+                                <div class="stat-desc">Performances puissantes et efficacité énergétique.</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-title">Budget</div>
+                                <div class="stat-value">Haut de gamme</div>
+                                <div class="stat-desc">Un investissement pour le luxe et la qualité.</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-title">Prix</div>
+                                <div class="stat-value">À partir de 100 000 €</div>
+                                <div class="stat-desc">Un choix premium pour les conducteurs exigeants.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <p>★★★★★ (20 avis)</p>
+                </div>
+                <div tabindex="0" class="collapse">
+                    <div class="collapse-title font-semibold">Avis des clients</div>
+                    <div class="collapse-content text-sm">
+                        Les clients apprécient particulièrement le confort et la technologie intégrée de la S-Class. "La Mercedes-Benz S-Class a changé ma façon de conduire. Un vrai plaisir!"— Jean Dupont
+                    </div>
+                    <article class="car">
+                        <h3>2. Mercedes-AMG GT</h3>
+                        <p>Un coupé sportif puissant et élégant, parfait pour les amateurs de sensations fortes.</p>
+                    </article>
+                    <div class="carousel w-full">
+                        <div id="slide1" class="carousel-item relative w-full">
+                            <img src="/image/mercedes amg gt/001-2024-Mercedes-AMG-GT63-Coupe-devanr.avif" class="w-full" />
+                            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                <a href="#slide4" class="btn btn-circle">❮</a>
+                                <a href="#slide2" class="btn btn-circle">❯</a>
+                            </div>
+                        </div>
+                        <div id="slide2" class="carousel-item relative w-full">
+                            <img src="/image/mercedes amg gt/011-2024-Mercedes-AMG-GT63-Coupe-fron-interieur1.avif" class="w-full" />
+                            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                <a href="#slide1" class="btn btn-circle">❮</a>
+                                <a href="#slide3" class="btn btn-circle">❯</a>
+                            </div>
+                        </div>
+                        <div id="slide3" class="carousel-item relative w-full">
+                            <img src="/image/mercedes amg gt/018-2024-Mercedes-AMG-GT63-Coupe-interieur.avif" class="w-full" />
+                            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                <a href="#slide2" class="btn btn-circle">❮</a>
+                                <a href="#slide4" class="btn btn-circle">❯</a>
+                            </div>
+                        </div>
+                        <div id="slide4" class="carousel-item relative w-full">
+                            <img src="/image/mercedes amg gt/016-2024-Mercedes-AMG-GT63-Coupe-derriere.jpg" class="w-full" />
+                            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                <a href="#slide3" class="btn btn-circle">❮</a>
+                                <a href="#slide1" class="btn btn-circle">❯</a>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Un coupé sportif puissant et élégant, parfait pour les amateurs de sensations fortes.</p>
+                    <div tabindex="0" class="collapse collapse-arrow bg-base-100 border-base-300 border">
+                        <div class="collapse-title font-semibold">Caracteristiques</div>
+                        <div class="collapse-content text-sm">
+                            <div class="stats stats-vertical shadow">
+                                <div class="stat">
+                                    <div class="stat-title">Type de Carrosserie</div>
+                                    <div class="stat-value">Coupé</div>
+                                    <div class="stat-desc">Un coupé sportif au design aérodynamique.</div>
+                                </div>
+
+                                <div class="stat">
+                                    <div class="stat-title">Utilisation</div>
+                                    <div class="stat-value">Sport</div>
+                                    <div class="stat-desc">Idéal pour des performances de conduite optimales.</div>
+                                </div>
+
+                                <div class="stat">
+                                    <div class="stat-title">Motorisation</div>
+                                    <div class="stat-value">V8 Bi-Turbo</div>
+                                    <div class="stat-desc">Puissance exceptionnelle et accélération rapide.</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-title">Budget</div>
+                                    <div class="stat-value">Haut de gamme</div>
+                                    <div class="stat-desc">Un choix prestigieux pour les passionnés de sport automobile.</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-title">Prix</div>
+                                    <div class="stat-value">À partir de 150 000 €</div>
+                                    <div class="stat-desc">Un investissement pour la performance et le style.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>★★★★☆ (18 avis)</p>
+                    </div>
+                    <div tabindex="0" class="collapse">
+                        <div class="collapse-title font-semibold">Avis des clients</div>
+                        <div class="collapse-content text-sm">
+                            Les clients sont ravis de la performance et du design de l'AMG GT "Une expérience de conduite incroyable!"— Marc Lefèvre
+                        </div>
+                    </div>
+                    <article class="car">
+                        <h3>3. Mercedes-Benz G-Class</h3>
+                        <p>Un SUV robuste et iconique, combinant luxe et capacités tout-terrain.</p>
+                    </article>
+                    <div class="carousel w-full">
+                        <div id="slide1" class="carousel-item relative w-full">
+                            <img src="/image/mercedes class g/mercedes-classe-g-iv-63-amg-v8-4-0-585-149407565.jpg" class="w-full" />
+                            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                <a href="#slide4" class="btn btn-circle">❮</a>
+                                <a href="#slide2" class="btn btn-circle">❯</a>
+                            </div>
+                        </div>
+                        <div id="slide2" class="carousel-item relative w-full">
+                            <img src="/image/mercedes class g/mercedes-g-electrique-2024-exterieur 2.jpg" class="w-full" />
+                            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                <a href="#slide1" class="btn btn-circle">❮</a>
+                                <a href="#slide3" class="btn btn-circle">❯</a>
+                            </div>
+                        </div>
+                        <div id="slide3" class="carousel-item relative w-full">
+                            <img src="/image/mercedes class g/mercedes-classe-g-interieur.jpg" class="w-full" />
+                            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                <a href="#slide2" class="btn btn-circle">❮</a>
+                                <a href="#slide4" class="btn btn-circle">❯</a>
+                            </div>
+                        </div>
+                        <div id="slide4" class="carousel-item relative w-full">
+                            <img src="/image/mercedes class g/classG-derriere.webp" class="w-full" />
+                            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                <a href="#slide3" class="btn btn-circle">❮</a>
+                                <a href="#slide1" class="btn btn-circle">❯</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div tabindex="0" class="collapse collapse-arrow bg-base-100 border-base-300 border">
+                        <div class="collapse-title font-semibold">Caracteristiques</div>
+                        <div class="collapse-content text-sm">
+                            <div class="stats stats-vertical shadow">
+                                <div class="stat">
+                                    <div class="stat-title">Type de Carrosserie</div>
+                                    <div class="stat-value">SUV</div>
+                                    <div class="stat-desc">Un véhicule robuste et adapté à l'aventure.</div>
+                                </div>
+
+                                <div class="stat">
+                                    <div class="stat-title">Utilisation</div>
+                                    <div class="stat-value">Tout-terrain</div>
+                                    <div class="stat-desc">Idéal pour les conditions difficiles.</div>
+                                </div>
+
+                                <div class="stat">
+                                    <div class="stat-title">Motorisation</div>
+                                    <div class="stat-value">V8</div>
+                                    <div class="stat-desc">Puissance et performance exceptionnelles.</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-title">Budget</div>
+                                    <div class="stat-value">Haut de gamme</div>
+                                    <div class="stat-desc">Un choix prestigieux pour les aventuriers.</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-title">Prix</div>
+                                    <div class="stat-value">À partir de 120 000 €</div>
+                                    <div class="stat-desc">Un investissement pour le luxe tout-terrain.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <P>★★★★★ (25 avis)</P>
+                    <div tabindex="0" class="collapse">
+                        <div class="collapse-title font-semibold">Avis des clients</div>
+                        <div class="collapse-content text-sm">
+                            Les clients apprécient sa robustesse et ses performances tout-terrain. "Le meilleur SUV que j'ai jamais conduit!"— Paul Martin
+                        </div>
+
+                        <article class="car">
+                            <h3>4. Mercedes-Benz E-Class</h3>
+                            <p>Une berline spacieuse et polyvalente, alliant performance et élégance.</p>
+                        </article>
+                        <div class="carousel w-full">
+                            <div id="slide1" class="carousel-item relative w-full">
+                                <img src="/image/mercedes class -E/mercedes-benz-devant1.jpg" class="w-full" />
+                                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                    <a href="#slide4" class="btn btn-circle">❮</a>
+                                    <a href="#slide2" class="btn btn-circle">❯</a>
+                                </div>
+                            </div>
+                            <div id="slide2" class="carousel-item relative w-full">
+                                <img src="/image/mercedes class -E/hd-mercedes-classe-e-w214-exterieur.jpg" class="w-full" />
+                                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                    <a href="#slide1" class="btn btn-circle">❮</a>
+                                    <a href="#slide3" class="btn btn-circle">❯</a>
+                                </div>
+                            </div>
+                            <div id="slide3" class="carousel-item relative w-full">
+                                <img src="/image/mercedes class -E/hd-mercedes-classe-e-interieur.jpg" class="w-full" />
+                                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                    <a href="#slide2" class="btn btn-circle">❮</a>
+                                    <a href="#slide4" class="btn btn-circle">❯</a>
+                                </div>
+                            </div>
+                            <div id="slide4" class="carousel-item relative w-full">
+                                <img src="/image/mercedes class -E/mercedes-benz-derriere.jpg" class="w-full" />
+                                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                    <a href="#slide3" class="btn btn-circle">❮</a>
+                                    <a href="#slide1" class="btn btn-circle">❯</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div tabindex="0" class="collapse collapse-arrow bg-base-100 border-base-300 border">
+                            <div class="collapse-title font-semibold">Caracteristiques</div>
+                            <div class="collapse-content text-sm">
+                                <div class="stats stats-vertical shadow">
+                                    <div class="stat">
+                                        <div class="stat-title">Type de Carrosserie</div>
+                                        <div class="stat-value">Berline</div>
+                                        <div class="stat-desc">Une berline spacieuse et confortable.</div>
+                                    </div>
+
+                                    <div class="stat">
+                                        <div class="stat-title">Utilisation</div>
+                                        <div class="stat-value">Familiale, Luxe</div>
+                                        <div class="stat-desc">Idéale pour les longs trajets.</div>
+                                    </div>
+
+                                    <div class="stat">
+                                        <div class="stat-title">Motorisation</div>
+                                        <div class="stat-value">Diesel, Essence, Hybride</div>
+                                        <div class="stat-desc">Performances équilibrées et économiques.</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-title">Budget</div>
+                                        <div class="stat-value">Haut de gamme</div>
+                                        <div class="stat-desc">Un choix de qualité pour les familles.</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-title">Prix</div>
+                                        <div class="stat-value">À partir de 60 000€</div>
+                                        <div class="stat-desc">Un investissement dans le confort et le luxe.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <P>★★★★☆ (18 avis)</P>
+                        <div tabindex="0" class="collapse">
+                            <div class="collapse-title font-semibold">Avis des clients</div>
+                            <div class="collapse-content text-sm">
+                                Les clients apprécient la qualité de conduite et le confort de l'E-Class. "Une berline qui allie confort et performance!"— Claire Martin
+                            </div>
+
+                            <article class="car">
+                                <h3>5. Mercedes-Benz CLA</h3>
+                                <p>Une berline compacte avec un design élégant et un prix abordable.</p>
+                            </article>
+                            <div class="carousel w-full">
+                                <div id="slide1" class="carousel-item relative w-full">
+                                    <img src="/image/mercedes cla/mercedes-cla-coupe-essai-devant1.webp" class="w-full" />
+                                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                        <a href="#slide4" class="btn btn-circle">❮</a>
+                                        <a href="#slide2" class="btn btn-circle">❯</a>
+                                    </div>
+                                </div>
+                                <div id="slide2" class="carousel-item relative w-full">
+                                    <img src="/image/mercedes cla/mercedes-cla-coupe-essai_devant2.webp" class="w-full" />
+                                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                        <a href="#slide1" class="btn btn-circle">❮</a>
+                                        <a href="#slide3" class="btn btn-circle">❯</a>
+                                    </div>
+                                </div>
+                                <div id="slide3" class="carousel-item relative w-full">
+                                    <img src="/image/mercedes cla/S1-essai-video-mercedes-cla-restylee-2024-interieur.jpg" class="w-full" />
+                                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                        <a href="#slide2" class="btn btn-circle">❮</a>
+                                        <a href="#slide4" class="btn btn-circle">❯</a>
+                                    </div>
+                                </div>
+                                <div id="slide4" class="carousel-item relative w-full">
+                                    <img src="/image/mercedes cla/mercedes-cla-coupe-essai_derriere.jpg" class="w-full" />
+                                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                        <a href="#slide3" class="btn btn-circle">❮</a>
+                                        <a href="#slide1" class="btn btn-circle">❯</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div tabindex="0" class="collapse collapse-arrow bg-base-100 border-base-300 border">
+                                <div class="collapse-title font-semibold">Caracteristiques</div>
+                                <div class="collapse-content text-sm">
+                                    <div class="stats stats-vertical shadow">
+                                        <div class="stat">
+                                            <div class="stat-title">Type de Carrosserie</div>
+                                            <div class="stat-value">berline coupé</div>
+                                            <div class="stat-desc">Un design élégant et moderne.</div>
+                                        </div>
+
+                                        <div class="stat">
+                                            <div class="stat-title">Utilisation</div>
+                                            <div class="stat-value">Urbain, Familial</div>
+                                            <div class="stat-desc">Parfaite pour la ville et les trajets quotidiens.</div>
+                                        </div>
+
+                                        <div class="stat">
+                                            <div class="stat-title">Motorisation</div>
+                                            <div class="stat-value">Essence, Diesel</div>
+                                            <div class="stat-desc">Économie de carburant et performance.</div>
+                                        </div>
+                                        <div class="stat">
+                                            <div class="stat-title">Budget</div>
+                                            <div class="stat-value">Abordable</div>
+                                            <div class="stat-desc">Un excellent rapport qualité-prix.</div>
+                                        </div>
+                                        <div class="stat">
+                                            <div class="stat-title">Prix</div>
+                                            <div class="stat-value">À partir de 40 000 €</div>
+                                            <div class="stat-desc">Un choix accessible pour le luxe.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <P>★★★★☆ (18 avis)</P>
+                            <div tabindex="0" class="collapse">
+                                <div class="collapse-title font-semibold">Avis des clients</div>
+                                <div class="collapse-content text-sm">
+                                    Les clients apprécient le design et la maniabilité de la CLA. "Une voiture stylée qui ne déçoit jamais!"— Sophie Durand
+                                </div>
+
+        </section>
+        <script src="script.js"></script>
+</body>
+
+</html>
