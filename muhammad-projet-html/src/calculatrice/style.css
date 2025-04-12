@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #f5f5f5, #0d1047);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #0d1047;
+    padding: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    display: flex;
+}
+
+form div input {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: 1.5rem;
+    text-align: center;
+    font-weight: 850;
+    background-color: #0c0f36;
+    color: #f5f5f5;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 15px 15px rgba(0, 0, 0, 0.2);
+    border: none;
+    outline: none;
+    margin: 5px;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.afficheur {
+    flex: 1;
+    justify-content: end;
+    text-align: end;
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 1rem 0.5rem;
+    margin: 1rem 0;
+}
+
+.equal {
+    flex: 1;
+    background-color: #1725f0;
+    color: #f5f5f5;
+}
+
+.delete {
+    flex: 1;
+    background-color: #1725f0;
+    color: #f5f5f5;
+}
+
+.operateur {
+    color: #1725f0;
+}

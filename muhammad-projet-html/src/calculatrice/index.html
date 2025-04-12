@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devise-width, initial-scale=1.0">
+    <title>Calculatrice </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div>
+                    <input type="text" readonly class="afficheur" name="resultat">
+                </div>
+                <div><input type="text" readonly value="7" onclick="resultat.value +='7'">
+                    <input type="text" readonly value="8" onclick="resultat.value +='8'">
+                    <input type="text" readonly value="9" onclick="resultat.value +='9'">
+                    <input type="text" readonly value="+" class="operateur">
+                </div>
+                <div><input type="text" readonly value="4" onclick="resultat.value +='4'">
+                    <input type="text" readonly value="5" onclick="resultat.value +='5'">
+                    <input type="text" readonly value="6" onclick="resultat.value +='6'">
+                    <input type="text" readonly value="-" class="operateur">
+                </div>
+                <div><input type="text" readonly value="1" onclick="resultat.value +='1'">
+                    <input type="text" readonly value="2" onclick="resultat.value +='2'">
+                    <input type="text" readonly value="3" onclick="resultat.value +='3'">
+                    <input type="text" readonly value="*" class="operateur">
+                </div>
+                <div><input type="text" readonly value="0" onclick="resultat.value +='0'">
+                    <input type="text" readonly value="DE" class="delete" class="operateur"
+                        onclick="resultat.value +=''">
+                </div>
+                <div><input type="text" readonly value="=" class="equal">
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <script src="calculatrice.js"></script>
+</body>
+
+</html>

@@ -1,44 +1,30 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('questionnaire');
-    const resultat = document.getElementById('resultat');
+// Afficher les modèles avec animation
+const showBtn = document.getElementById("showModelsBtn");
+const section = document.getElementById("modelsSection");
 
-    // Bonnes réponses
-    const bonnesReponses = {
-        q1: "S-Class",
-        q2: "AMG GT",
-        q3: "G-Class",
-        q4: "EQS",
-        q5: "CLA"
-    };
-
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
-
-        let erreurs = [];
-        let score = 0;
-
-        for (let i = 1; i <= 5; i++) {
-            const question = `q${i}`;
-            const reponse = form[question].value;
-
-            if (!reponse) {
-                erreurs.push(`Vous n'avez pas répondu à la question ${i}`);
-            } else if (reponse !== bonnesReponses[question]) {
-                erreurs.push(`Question ${i} incorrecte`);
-            } else {
-                score++;
-            }
-        }
-
-        resultat.classList.remove('hidden');
-        resultat.classList.remove('text-red-600', 'text-green-600');
-
-        if (erreurs.length > 0) {
-            resultat.classList.add('text-red-600');
-            resultat.innerHTML = `❌ Erreurs trouvées :<br>${erreurs.join("<br>")}`;
-        } else {
-            resultat.classList.add('text-green-600');
-            resultat.innerHTML = `✅ Bravo ! Toutes les réponses sont correctes.<br>Voici notre email : <strong>contact@mercedes.fr</strong>`;
-        }
-    });
+showBtn.addEventListener("click", () => {
+    section.classList.remove("hidden");
+    setTimeout(() => {
+        section.classList.remove("opacity-0", "translate-y-4");
+        section.classList.add("opacity-100", "translate-y-0");
+    }, 10);
 });
+// Sélectionne le bouton "scroll to top"
+const scrollToTopButton = document.getElementById('scrollToTop');
+
+// Afficher le bouton lorsque l'utilisateur fait défiler vers le bas
+window.onscroll = function() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollToTopButton.classList.remove('hidden');
+    } else {
+        scrollToTopButton.classList.add('hidden');
+    }
+};
+
+// Ramener en haut de la page au clic
+scrollToTopButton.onclick = function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Effet de défilement doux
+    });
+};
