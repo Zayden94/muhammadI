@@ -1,3 +1,4 @@
+//Ici dans ce questionnaire.js il me sert dans le questionnaire.html je n'ai pas mis dans le main.js parce que le bouton brute de force rentre en conflit donc c'est pour cela que j'ai lis mis separement
 const questions = [{
         question: "1. Quel est le modèle le plus luxueux ?",
         options: ["S-Class", "CLA", "G-Class"],
@@ -111,7 +112,7 @@ function verifierReponse() {
     }
 }
 document.getElementById("bruteforce-btn").addEventListener("click", bruteforce);
-
+//voici la fonction brute de force que j'ai configurer 
 function bruteforce() {
     const consoleDiv = document.getElementById("console");
     const spinner = document.getElementById("spinner");
